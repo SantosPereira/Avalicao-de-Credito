@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4f896852-49a4-4e40-9eed-b02c2244858a",
+		"name": "Testes Genéricos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15598386"
+	},
+	"item": [
+		{
+			"name": "Predizer crédito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"duration\": 15.0,\n    \"credit_amount\": 806.0,\n    \"installment_commitment\": 4.0,\n    \"residence_since\": 4.0,\n    \"age\": 22.0,\n    \"existing_credits\": 1.0,\n    \"num_dependents\": 1.0,\n    \"checking_status_0<=X<200\": false,\n    \"checking_status_<0\": true,\n    \"checking_status_>=200\": false,\n    \"checking_status_no checking\": false,\n    \"credit_history_all paid\": false,\n    \"credit_history_critical/other existing credit\": false,\n    \"credit_history_delayed previously\": false,\n    \"credit_history_existing paid\": true,\n    \"credit_history_no credits/all paid\": false,\n    \"purpose_business\": true,\n    \"purpose_domestic appliance\": false,\n    \"purpose_education\": false,\n    \"purpose_furniture/equipment\": false,\n    \"purpose_new car\": false,\n    \"purpose_other\": false,\n    \"purpose_radio/tv\": false,\n    \"purpose_repairs\": false,\n    \"purpose_retraining\": false,\n    \"purpose_used car\": false,\n    \"savings_status_100<=X<500\": false,\n    \"savings_status_500<=X<1000\": false,\n    \"savings_status_<100\": true,\n    \"savings_status_>=1000\": false,\n    \"savings_status_no known savings\": false,\n    \"employment_1<=X<4\": true,\n    \"employment_4<=X<7\": false,\n    \"employment_<1\": false,\n    \"employment_>=7\": false,\n    \"employment_unemployed\": false,\n    \"personal_status_female div/dep/mar\": true,\n    \"personal_status_male div/sep\": false,\n    \"personal_status_male mar/wid\": false,\n    \"personal_status_male single\": false,\n    \"other_parties_co applicant\": false,\n    \"other_parties_guarantor\": false,\n    \"other_parties_none\": true,\n    \"property_magnitude_car\": false,\n    \"property_magnitude_life insurance\": true,\n    \"property_magnitude_no known property\": false,\n    \"property_magnitude_real estate\": false,\n    \"other_payment_plans_bank\": false,\n    \"other_payment_plans_none\": true,\n    \"other_payment_plans_stores\": false,\n    \"housing_for free\": false,\n    \"housing_own\": true,\n    \"housing_rent\": false,\n    \"job_high qualif/self emp/mgmt\": false,\n    \"job_skilled\": false,\n    \"job_unemp/unskilled non res\": false,\n    \"job_unskilled resident\": true,\n    \"own_telephone_none\": true,\n    \"own_telephone_yes\": false,\n    \"foreign_worker_no\": false,\n    \"foreign_worker_yes\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/model",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"model"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
